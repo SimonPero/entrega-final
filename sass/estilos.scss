@@ -1,0 +1,29 @@
+//import utilities
+@import "secundarios/utilities/listas";
+@import "secundarios/utilities/variables";
+
+/*reset*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*body*/
+body{
+    background-color: nth($colores,4);
+}
+//imports
+@import "secundarios/grid";
+@import"secundarios/header";
+@import "secundarios/main";
+@import "secundarios/section";
+@import "secundarios/anuncios";
+@import "secundarios/footer";
+@import "secundarios/mediaquarie";
+
+/*links css*/
+
+
+a:visited{
+    color: nth($colores,2);
+}

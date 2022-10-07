@@ -1,0 +1,30 @@
+//import utitities
+@import "utilities/extend";
+
+/*section*/
+.eventos{
+    margin: $separador;
+    .img-eventos{
+        display: flex;
+        justify-content: end;
+        img{
+        border-radius: 6rem;
+        }           
+    }
+}
+
+/*section dudas*/
+.dudas-frecuentes{
+    @extend %margin;
+    
+    .mas-dudas{
+            div{
+                display: flex;
+                justify-content: left;
+                img{
+                    max-height: 80%;
+                    max-width: 80%;
+                }
+            }
+    } 
+}    

@@ -1,0 +1,62 @@
+
+//import utitities
+@import "utilities/variables";
+
+/*mediaquearie*/
+@media (max-width:2000px) and (min-width:650px){
+    .contenedor{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main anuncio-dos"
+        "anuncio-uno section section section section"
+        "footer footer footer footer footer";
+    }
+    /*secciones*/
+    header{
+        grid-area:header;
+        nav{
+            div{
+                .logo-granlector{
+                    display: flex;
+                    height: 4rem;
+                }
+            }
+        } 
+    }
+
+    /*mains*/
+    main{
+        grid-area:main;
+    }
+    .img-nosotros{
+        img{
+           display: none; 
+        }     
+    }
+    /*sections*/
+    section{
+        grid-area:section;
+        p{
+            overflow: auto;
+        }
+    }
+    /*footer*/
+    footer{
+        grid-area:footer;
+    }
+    /*anuncios grid*/
+    .anuncio-uno{
+        display: grid;
+        margin: $separador;
+        grid-area: anuncio-uno ;
+        height: 50%;
+    }
+    .anuncio-dos{
+        margin: $separador;
+        display: grid;
+        grid-area: anuncio-dos ;
+    }  
+}

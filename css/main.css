@@ -1,0 +1,169 @@
+/*paleta de colores*/
+/*reset*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/*body*/
+body {
+  background-color: #F2D6EB; }
+
+/*grid telefono*/
+.contenedor {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: "header header" "main main" "section section" "footer footer"; }
+  .contenedor header {
+    grid-area: header; }
+  .contenedor main {
+    grid-area: main; }
+  .contenedor section {
+    grid-area: section; }
+  .contenedor footer {
+    grid-area: footer; }
+
+/*paleta de colores*/
+/*headers*/
+header {
+  width: 100%; }
+  header .marca {
+    text-align: Center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #5C94BD; }
+  header .fondo-color {
+    background-color: #470938; }
+  header .logo-granlector {
+    display: none; }
+
+/*margin general*/
+.main-lector, .audio-libro, .staff, .registrar, .dudas-frecuentes {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem; }
+
+/*main Gran lector*/
+.main-lector .img-nosotros {
+  display: flex;
+  justify-content: end; }
+  .main-lector .img-nosotros img {
+    border-radius: 10rem; }
+
+/*main manwha*/
+.manwha {
+  margin-left: 2rem; }
+  .manwha img {
+    height: 100%; }
+
+/*main audiolibro*/
+.audio-libro img {
+  height: 100%; }
+
+/*Main dudas*/
+.staff {
+  text-align: center; }
+  .staff div img {
+    max-height: 60%;
+    max-width: 40%;
+    border-radius: 10rem; }
+
+/*Main Register*/
+.registrar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  .registrar form fieldset {
+    width: 100%;
+    height: 100%;
+    background-color: white; }
+    .registrar form fieldset div {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+
+/*margin general*/
+.main-lector, .audio-libro, .staff, .registrar, .dudas-frecuentes {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem; }
+
+/*section*/
+.eventos {
+  margin: 2rem; }
+  .eventos .img-eventos {
+    display: flex;
+    justify-content: end; }
+    .eventos .img-eventos img {
+      border-radius: 6rem; }
+
+/*section dudas*/
+.dudas-frecuentes .mas-dudas div {
+  display: flex;
+  justify-content: left; }
+  .dudas-frecuentes .mas-dudas div img {
+    max-height: 80%;
+    max-width: 80%; }
+
+/* anuncios*/
+.anuncio-dos {
+  display: none;
+  grid-area: anuncio-dos; }
+
+.anuncio-uno {
+  grid-area: anuncio-uno;
+  display: none; }
+
+/*paleta de colores*/
+/*footer*/
+footer {
+  grid-area: footer;
+  margin-top: auto; }
+  footer .derechos {
+    color: #5C94BD; }
+  footer .fondo-color {
+    background-color: #470938; }
+  footer .logos-sociales img:last-child {
+    max-width: 4.54vh;
+    max-height: 4.54vh; }
+
+/*mediaquearie*/
+@media (max-width: 2000px) and (min-width: 650px) {
+  .contenedor {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header header header header header" "main main main main anuncio-dos" "anuncio-uno section section section section" "footer footer footer footer footer"; }
+  /*secciones*/
+  header {
+    grid-area: header; }
+    header nav div .logo-granlector {
+      display: flex;
+      height: 4rem; }
+  /*mains*/
+  main {
+    grid-area: main; }
+  .img-nosotros img {
+    display: none; }
+  /*sections*/
+  section {
+    grid-area: section; }
+    section p {
+      overflow: auto; }
+  /*footer*/
+  footer {
+    grid-area: footer; }
+  /*anuncios grid*/
+  .anuncio-uno {
+    display: grid;
+    margin: 2rem;
+    grid-area: anuncio-uno;
+    height: 50%; }
+  .anuncio-dos {
+    margin: 2rem;
+    display: grid;
+    grid-area: anuncio-dos; } }
+
+/*links css*/
+a:visited {
+  color: #5C94BD; }

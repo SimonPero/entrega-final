@@ -1,0 +1,64 @@
+//import utitities
+@import "utilities/extend";
+@import "utilities/variables";
+
+/*main Gran lector*/
+.main-lector{
+    @extend %margin;
+    .img-nosotros{
+        display: flex;
+        justify-content: end;
+        img{
+            border-radius: 10rem;
+        }     
+    }
+          
+}
+/*main manwha*/
+.manwha{
+    margin-left: $separador;
+    img{
+        height: 100%;
+    }
+}
+
+/*main audiolibro*/
+.audio-libro{
+    @extend %margin;
+    img{
+        height: 100%;
+    }
+}
+/*Main dudas*/
+.staff{
+    @extend %margin;
+    text-align: center;
+    div{
+        img{
+            
+            max-height: 60%;
+            max-width: 40%;
+            border-radius: 10rem ; 
+        }
+    }
+}
+
+/*Main Register*/
+.registrar{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    @extend %margin;
+    form{
+        fieldset{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            div{
+                margin-top: 10px;
+                margin-bottom: 10px; 
+            }
+        }
+    }
+}
