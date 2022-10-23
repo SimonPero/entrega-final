@@ -3,7 +3,7 @@
 
 /*section*/
 .eventos{
-    margin: $separador;
+    @extend %margin;
     .img-eventos{
         display: flex;
         justify-content: end;

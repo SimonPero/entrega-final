@@ -5,15 +5,18 @@
 footer{
     grid-area: footer;
     margin-top: auto;
-    .derechos{
-        color: nth($colores,2);
-    }
-    .fondo-color{
+    display: inline-block;
+    nav{
         background-color: nth($colores,1);
-    }
-    .logos-sociales img:last-child{
-        max-width: 4.54vh;
-        max-height: 4.54vh;
-    }
-    
+        
+        .derechos{
+            color: nth($colores,2);
+        }  
+        .logos-sociales{
+            img:last-child{
+                max-width: 4.54vh;
+                max-height: 4.54vh;
+            }
+        }
+    }   
 }

@@ -10,23 +10,31 @@
         justify-content: end;
         img{
             border-radius: 10rem;
+            max-width: 60%;
         }     
     }
           
 }
 /*main manwha*/
 .manwha{
-    margin-left: $separador;
-    img{
-        height: 100%;
+    @extend %margin;
+    .manwha-card{
+        max-height: 80%;
+        .manwha-img{
+            height: 100%;
+        }
+        
     }
 }
 
 /*main audiolibro*/
 .audio-libro{
     @extend %margin;
-    img{
-        height: 100%;
+    .audiolibros-img{
+        img{
+            height: 100%;
+            
+        }
     }
 }
 /*Main dudas*/

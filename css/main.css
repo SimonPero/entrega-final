@@ -26,6 +26,8 @@ body {
 /*paleta de colores*/
 /*headers*/
 header {
+  display: grid;
+  grid-area: header;
   width: 100%; }
   header .marca {
     text-align: Center;
@@ -38,7 +40,7 @@ header {
     display: none; }
 
 /*margin general*/
-.main-lector, .audio-libro, .staff, .registrar, .dudas-frecuentes {
+.main-lector, .manwha, .audio-libro, .staff, .registrar, .eventos, .dudas-frecuentes {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 2rem; }
@@ -48,16 +50,17 @@ header {
   display: flex;
   justify-content: end; }
   .main-lector .img-nosotros img {
-    border-radius: 10rem; }
+    border-radius: 10rem;
+    max-width: 60%; }
 
 /*main manwha*/
-.manwha {
-  margin-left: 2rem; }
-  .manwha img {
+.manwha .manwha-card {
+  max-height: 80%; }
+  .manwha .manwha-card .manwha-img {
     height: 100%; }
 
 /*main audiolibro*/
-.audio-libro img {
+.audio-libro .audiolibros-img img {
   height: 100%; }
 
 /*Main dudas*/
@@ -83,19 +86,17 @@ header {
       margin-bottom: 10px; }
 
 /*margin general*/
-.main-lector, .audio-libro, .staff, .registrar, .dudas-frecuentes {
+.main-lector, .manwha, .audio-libro, .staff, .registrar, .eventos, .dudas-frecuentes {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 2rem; }
 
 /*section*/
-.eventos {
-  margin: 2rem; }
-  .eventos .img-eventos {
-    display: flex;
-    justify-content: end; }
-    .eventos .img-eventos img {
-      border-radius: 6rem; }
+.eventos .img-eventos {
+  display: flex;
+  justify-content: end; }
+  .eventos .img-eventos img {
+    border-radius: 6rem; }
 
 /*section dudas*/
 .dudas-frecuentes .mas-dudas div {
@@ -118,14 +119,15 @@ header {
 /*footer*/
 footer {
   grid-area: footer;
-  margin-top: auto; }
-  footer .derechos {
-    color: #5C94BD; }
-  footer .fondo-color {
+  margin-top: auto;
+  display: inline-block; }
+  footer nav {
     background-color: #470938; }
-  footer .logos-sociales img:last-child {
-    max-width: 4.54vh;
-    max-height: 4.54vh; }
+    footer nav .derechos {
+      color: #5C94BD; }
+    footer nav .logos-sociales img:last-child {
+      max-width: 4.54vh;
+      max-height: 4.54vh; }
 
 /*mediaquearie*/
 @media (max-width: 2000px) and (min-width: 650px) {
@@ -135,11 +137,13 @@ footer {
     display: grid;
     grid-template-areas: "header header header header header" "main main main main anuncio-dos" "anuncio-uno section section section section" "footer footer footer footer footer"; }
   /*secciones*/
-  header {
-    grid-area: header; }
-    header nav div .logo-granlector {
-      display: flex;
-      height: 4rem; }
+  header nav .marca {
+    display: none; }
+  header nav .logo-granlector {
+    display: flex; }
+    header nav .logo-granlector img {
+      max-width: 5rem;
+      max-height: 5rem; }
   /*mains*/
   main {
     grid-area: main; }
