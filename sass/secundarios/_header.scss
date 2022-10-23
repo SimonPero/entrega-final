@@ -6,16 +6,17 @@ header{
     display: grid;
     grid-area: header;
     width: 100%;
-    .marca{
-        text-align: Center;
-        font-size: 40px;
-        font-weight: bold;
-        color:nth($colores,2);
-    }
     .fondo-color{
         background-color: nth($colores,1);
-    }
-    .logo-granlector{
-        display: none;
+    }   
+    .contenedor-header{
+        justify-content: space-evenly;
+        .logo-granlector{    
+            width: 80%;     
+            img{
+                max-width: 4.7rem;
+                max-height: 4.7rem;
+            }
+        }
     }
 }
