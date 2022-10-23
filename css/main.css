@@ -124,7 +124,8 @@ footer {
   footer nav {
     background-color: #470938; }
     footer nav .derechos {
-      color: #5C94BD; }
+      color: #5C94BD;
+      font-size: small; }
     footer nav .logos-sociales img:last-child {
       max-width: 4.54vh;
       max-height: 4.54vh; }
