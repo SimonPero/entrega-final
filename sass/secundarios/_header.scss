@@ -10,12 +10,11 @@ header{
         background-color: nth($colores,1);
     }   
     .contenedor-header{
-        justify-content: space-evenly;
         .logo-granlector{    
             width: 80%;     
             img{
-                max-width: 5rem;
-                max-height: 5rem;
+                max-width: 4.5rem;
+                max-height: 4.5rem;
             }
         }
     }
