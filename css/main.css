@@ -60,8 +60,10 @@ header {
     height: 100%; }
 
 /*main audiolibro*/
-.audio-libro .audiolibros-img img {
-  height: 100%; }
+.audio-libro .audiolibros-card {
+  max-height: 80%; }
+  .audio-libro .audiolibros-card .audiolibros-img {
+    height: 100%; }
 
 /*Main dudas*/
 .staff {

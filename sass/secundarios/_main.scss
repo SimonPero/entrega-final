@@ -30,10 +30,10 @@
 /*main audiolibro*/
 .audio-libro{
     @extend %margin;
-    .audiolibros-img{
-        img{
+    .audiolibros-card{
+        max-height: 80%;
+        .audiolibros-img{
             height: 100%;
-            
         }
     }
 }
