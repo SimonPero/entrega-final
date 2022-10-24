@@ -28,11 +28,13 @@ body {
 header {
   display: grid;
   grid-area: header;
-  width: 100%; }
+  width: 100%;
+  height: 60%; }
   header .fondo-color {
     background-color: #470938; }
   header .contenedor-header .logo-granlector {
-    width: 80%; }
+    width: 70%;
+    margin-left: 0.5rem; }
     header .contenedor-header .logo-granlector img {
       max-width: 4.5rem;
       max-height: 4.5rem; }
