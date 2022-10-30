@@ -19,5 +19,18 @@ header{
                 max-height: 4.5rem;
             }
         }
+        .offcanvas{
+            .offcanvas-body{ 
+                .cierre-canva{
+                    display: flex;
+                    justify-content: right;
+                    button{
+                        background-color:nth($colores,2);
+                    }
+                    
+                    
+                }
+            }
+        }
     }
 }

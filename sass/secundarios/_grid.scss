@@ -3,10 +3,10 @@
     display: grid;
     min-height: 100vh;
     grid-template-areas:
-    "header header"
-    "main main"
-    "section section"
-    "footer footer";
+    "header"
+    "main "
+    "section "
+    "footer ";
     header{
         grid-area: header;
     }

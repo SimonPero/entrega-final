@@ -13,7 +13,7 @@ body {
 .contenedor {
   display: grid;
   min-height: 100vh;
-  grid-template-areas: "header header" "main main" "section section" "footer footer"; }
+  grid-template-areas: "header" "main " "section " "footer "; }
   .contenedor header {
     grid-area: header; }
   .contenedor main {
@@ -38,12 +38,15 @@ header {
     header .contenedor-header .logo-granlector img {
       max-width: 4.5rem;
       max-height: 4.5rem; }
+  header .contenedor-header .offcanvas .offcanvas-body .cierre-canva {
+    display: flex;
+    justify-content: right; }
+    header .contenedor-header .offcanvas .offcanvas-body .cierre-canva button {
+      background-color: #5C94BD; }
 
 /*margin general*/
 .main-lector, .manwha, .audio-libro, .staff, .registrar, .eventos, .dudas-frecuentes {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem; }
+  margin: 2rem; }
 
 /*main Gran lector*/
 .main-lector .img-nosotros {
@@ -61,9 +64,9 @@ header {
 
 /*main audiolibro*/
 .audio-libro .audiolibros-card {
-  max-height: 100%; }
+  max-height: 80%; }
   .audio-libro .audiolibros-card .audiolibros-img {
-    min-height: 100%; }
+    height: 100%; }
 
 /*Main dudas*/
 .staff {
@@ -89,16 +92,16 @@ header {
 
 /*margin general*/
 .main-lector, .manwha, .audio-libro, .staff, .registrar, .eventos, .dudas-frecuentes {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem; }
+  margin: 2rem; }
 
 /*section*/
 .eventos .img-eventos {
   display: flex;
   justify-content: end; }
   .eventos .img-eventos img {
-    border-radius: 6rem; }
+    border-radius: 10rem;
+    max-width: 35%;
+    max-height: 40%; }
 
 /*section dudas*/
 .dudas-frecuentes .mas-dudas div {
@@ -110,11 +113,9 @@ header {
 
 /* anuncios*/
 .anuncio-dos {
-  display: none;
-  grid-area: anuncio-dos; }
+  display: none; }
 
 .anuncio-uno {
-  grid-area: anuncio-uno;
   display: none; }
 
 /*paleta de colores*/
@@ -139,14 +140,26 @@ footer {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-areas: "header header header header header" "main main main main anuncio-dos" "anuncio-uno section section section section" "footer footer footer footer footer"; }
+    grid-template-areas: "header header header header" "main main main anuncio-dos" "anuncio-uno section section section " "footer footer footer footer"; }
   /*secciones*/
-  header nav .logo-granlector img {
-    max-width: 5rem;
-    max-height: 5rem; }
+  header .contenedor-header {
+    display: inline-block; }
+    header .contenedor-header .logo-granlector {
+      max-width: 10%;
+      margin: 0px; }
+      header .contenedor-header .logo-granlector img {
+        max-width: 5rem;
+        max-height: 5rem; }
+    header .contenedor-header .header-pc {
+      display: flex; }
+      header .contenedor-header .header-pc ul {
+        flex-direction: row; }
+    header .contenedor-header button {
+      display: none; }
   /*mains*/
   main {
-    grid-area: main; }
+    grid-area: main;
+    width: 80%; }
   .img-nosotros img {
     display: none; }
   /*sections*/
@@ -163,14 +176,16 @@ footer {
       max-width: 80%; }
   /*anuncios grid*/
   .anuncio-uno {
-    display: grid;
     margin: 2rem;
-    grid-area: anuncio-uno;
-    height: 50%; }
+    display: grid;
+    grid-area: anuncio-uno; }
   .anuncio-dos {
     margin: 2rem;
     display: grid;
-    grid-area: anuncio-dos; } }
+    grid-area: anuncio-dos; }
+    .anuncio-dos img {
+      max-width: 100%;
+      height: 70%; } }
 
 /*links css*/
 a:visited {
