@@ -85,19 +85,18 @@
 
 /*Main Register*/
 .registrar{
-    @extend %margin;
     display: grid;
     justify-content: center;
     form{
         display: flex;
         max-width: 100%;
-        text-align: center;
-        flex-wrap: wrap;
         legend{
+            display: flex;
             color: nth($colores,4 );
             font-style:italic;
             font-weight: bold;
             outline-style:double;
+            justify-content: center;
         }
         fieldset{
             max-width: 100%;
@@ -108,8 +107,7 @@
                 grid-template-areas: 
                 "label"
                 "input";
-                margin-top: 10px;
-                margin-bottom: 10px;
+                @extend %margin;
                 text-align: left;
                 label{
                     grid-area:label;
@@ -121,7 +119,6 @@
                 flex-direction: row;
                 justify-content: space-between;
                 input{
-                    margin:$separador ;
                     background-color:nth($colores,4);
                     border-style: none;
                     border-radius: 1rem;
