@@ -1,4 +1,12 @@
 /*paleta de colores*/
+/*margin general*/
+.main-lector, .manwha, .audio-libro, .staff, .registrar, .registrar form fieldset div, .eventos, .dudas-frecuentes {
+  margin: 1rem; }
+
+/*Estilo de letras*/
+header, .main-lector, .manwha, .audio-libro, .staff, .registrar, .eventos, .dudas-frecuentes, .dudas-frecuentes .mas-dudas, footer {
+  font-family: Arial, Helvetica, sans-serif; }
+
 /*reset*/
 * {
   margin: 0%;
@@ -23,7 +31,6 @@ body {
   .contenedor footer {
     grid-area: footer; }
 
-/*paleta de colores*/
 /*headers*/
 header {
   display: grid;
@@ -47,10 +54,6 @@ header {
         background-color: #5C94BD; }
     header .contenedor-header .offcanvas .offcanvas-body ul li {
       color: #5dcad1; }
-
-/*margin general*/
-.main-lector, .manwha, .audio-libro, .staff, .registrar form fieldset div, .eventos, .dudas-frecuentes {
-  margin: 2rem; }
 
 /*main Gran lector*/
 .main-lector .img-nosotros {
@@ -79,13 +82,16 @@ header {
 .audio-libro ul {
   list-style: none; }
   .audio-libro ul .audiolibros-card .card-fondo {
-    height: fit-content; }
+    height: max-content; }
     .audio-libro ul .audiolibros-card .card-fondo .audiolibros-img {
       min-height: 100%; }
   .audio-libro ul .audiolibros-card .card-body {
-    color: #F2D6EB; }
+    color: #F2D6EB;
+    display: flex;
+    flex-wrap: wrap; }
     .audio-libro ul .audiolibros-card .card-body p {
-      font-size: 70%; }
+      font-size: small;
+      overflow: hidden; }
 
 .audio-libro .audiolibros-card {
   max-height: 100%; }
@@ -105,8 +111,7 @@ header {
   display: grid;
   justify-content: center; }
   .registrar form {
-    display: flex;
-    max-width: 100%; }
+    display: flex; }
     .registrar form legend {
       display: flex;
       color: #F2D6EB;
@@ -115,8 +120,8 @@ header {
       outline-style: double;
       justify-content: center; }
     .registrar form fieldset {
+      height: fit-content;
       max-width: 100%;
-      max-height: 100%;
       background-color: #9b7893; }
       .registrar form fieldset div {
         display: grid;
@@ -132,11 +137,8 @@ header {
         .registrar form fieldset .botones-registrar input {
           background-color: #F2D6EB;
           border-style: none;
-          border-radius: 1rem; }
-
-/*margin general*/
-.main-lector, .manwha, .audio-libro, .staff, .registrar form fieldset div, .eventos, .dudas-frecuentes {
-  margin: 2rem; }
+          border-radius: 1rem;
+          padding: 0.2rem; }
 
 /*section*/
 .eventos .img-eventos {
@@ -148,6 +150,10 @@ header {
     max-height: 40%; }
 
 /*section dudas*/
+.dudas-frecuentes .frecuentes .sub-titulos {
+  font-weight: bold;
+  font-size: medium; }
+
 .dudas-frecuentes .mas-dudas div {
   display: flex;
   justify-content: left; }
@@ -168,7 +174,6 @@ header {
 .anuncio-cuatro {
   display: none; }
 
-/*paleta de colores*/
 /*footer*/
 footer {
   grid-area: footer;
@@ -177,7 +182,8 @@ footer {
     width: 100%;
     background-color: #470938; }
     footer nav .contenedor-footer {
-      display: flex; }
+      display: flex;
+      justify-content: space-around; }
       footer nav .contenedor-footer .derechos {
         color: #5C94BD;
         font-size: small;
@@ -187,12 +193,12 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: end;
-        gap: 2rem; }
-        footer nav .contenedor-footer .logos-sociales img:last-child {
-          max-width: 4.54vh;
-          max-height: 4.54vh; }
+        gap: 1rem; }
+        footer nav .contenedor-footer .logos-sociales img {
+          width: 4.54vh;
+          height: 4.54vh;
+          border-radius: 0.3rem; }
 
-/*paleta de colores*/
 @media (max-width: 991px) and (min-width: 576px) {
   .contenedor {
     height: 100%;
@@ -265,7 +271,7 @@ footer {
   .anuncio-uno {
     display: none; }
   .anuncio-tres {
-    margin: 2rem;
+    margin: 1rem;
     display: grid;
     grid-area: anuncio-tres;
     display: flex;
@@ -277,7 +283,7 @@ footer {
   .anuncio-dos {
     display: none; }
   .anuncio-cuatro {
-    margin: 2rem;
+    margin: 1rem;
     display: grid;
     grid-area: anuncio-cuatro;
     display: flex;
@@ -368,7 +374,8 @@ footer {
     display: grid;
     grid-template-areas: "header header header header" "anuncio-uno main main anuncio-dos" "anuncio-uno main main anuncio-dos " "footer footer footer footer"; }
     .register .contenedor .anuncio-uno {
-      height: 50%; }
+      height: 50%;
+      margin-right: -1rem; }
     .register .contenedor .anuncio-dos {
       height: 70%; }
       .register .contenedor .anuncio-dos img {
@@ -387,12 +394,12 @@ footer {
       max-width: 80%; }
   /*anuncios estilos*/
   .anuncio-uno {
-    margin: 2rem;
+    margin: 1rem;
     display: grid;
     grid-area: anuncio-uno;
     object-fit: cover; }
   .anuncio-dos {
-    margin: 2rem;
+    margin: 1rem;
     display: grid;
     grid-area: anuncio-dos; }
     .anuncio-dos img {

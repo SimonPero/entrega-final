@@ -1,10 +1,9 @@
-//import utitities
-@import "utilities/extend";
-@import "utilities/variables";
+
 
 /*main Gran lector*/
 .main-lector{
     @extend %margin;
+    @extend %caligrafia;
     .img-nosotros{
         display: flex;
         justify-content: end;
@@ -18,6 +17,7 @@
 /*main manwha*/
 .manwha{
     @extend %margin;
+    @extend %caligrafia;
         ul{
             list-style: none;
             .manwha-card{  
@@ -36,7 +36,6 @@
             }
         }
     .manwha-card{
-        
         .card-fondo{
             background-color: nth($colores,7);
         }
@@ -46,19 +45,23 @@
 /*main audiolibro*/
 .audio-libro{
     @extend %margin;
+    @extend %caligrafia;
     ul{
         list-style: none;
         .audiolibros-card{
             .card-fondo{
-                height: fit-content;
+                height: max-content;
                 .audiolibros-img{
                     min-height: 100%;
                 }
             }
             .card-body{
                 color: nth($colores, 4);
+                display: flex;
+                flex-wrap: wrap;
                 p{
-                   font-size: 70%;
+                   font-size: small;
+                   overflow: hidden;
                 }
             }
         }
@@ -73,6 +76,7 @@
 /*Main dudas*/
 .staff{
     @extend %margin;
+    @extend %caligrafia;
     text-align: center;
     div{
         img{
@@ -87,9 +91,10 @@
 .registrar{
     display: grid;
     justify-content: center;
+    @extend %caligrafia;
+    @extend %margin;
     form{
         display: flex;
-        max-width: 100%;
         legend{
             display: flex;
             color: nth($colores,4 );
@@ -99,8 +104,8 @@
             justify-content: center;
         }
         fieldset{
+            height: fit-content;
             max-width: 100%;
-            max-height: 100%;
             background-color: nth($colores,7);
             div{
                 display: grid;
@@ -122,6 +127,7 @@
                     background-color:nth($colores,4);
                     border-style: none;
                     border-radius: 1rem;
+                    padding: 0.2rem;
                 }
             }
         }

@@ -1,5 +1,4 @@
-//import utitities
-@import "utilities/listas";
+
 
 /*headers*/
 header{
@@ -7,6 +6,7 @@ header{
     grid-area: header;
     width: 100%;
     height: 60%;
+    @extend %caligrafia;
     .fondo-color{
         background-color: nth($colores,1);
     }   

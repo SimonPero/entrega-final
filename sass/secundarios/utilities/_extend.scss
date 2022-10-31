@@ -1,7 +1,11 @@
-//import utilities
-@import "variables";
 
 /*margin general*/
 %margin{
     margin: $separador;
+}
+
+/*Estilo de letras*/
+
+%caligrafia{
+    font-family:Arial, Helvetica, sans-serif;
 }

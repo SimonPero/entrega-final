@@ -1,9 +1,7 @@
-//import utitities
-@import "utilities/extend";
-
 /*section*/
 .eventos{
     @extend %margin;
+    @extend %caligrafia;
     .img-eventos{
         display: flex;
         justify-content: end;
@@ -18,7 +16,16 @@
 /*section dudas*/
 .dudas-frecuentes{
     @extend %margin;
+    @extend %caligrafia;
+    .frecuentes{
+        .sub-titulos{
+            font-weight: bold;
+            font-size: medium;
+        }
+    }
+
     .mas-dudas{
+        @extend %caligrafia;
             div{
                 display: flex;
                 justify-content: left;
