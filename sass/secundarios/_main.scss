@@ -18,10 +18,29 @@
 /*main manwha*/
 .manwha{
     @extend %margin;
+    
+        ul{
+            list-style: none;
+            .manwha-card{
+                
+                .card-fondo{
+                    height: fit-content;
+                    .manwha-img{
+                        min-height: 100%;
+                    }
+                }
+                .card-body{
+                    
+                    p{
+                        font-size: 70%;
+                    }
+                }
+            }
+        }
     .manwha-card{
-        max-height: 80%;
-        .manwha-img{
-            height: 100%;
+        
+        .card-fondo{
+            background-color: nth($colores,7);
         }
     }
 }
@@ -29,10 +48,26 @@
 /*main audiolibro*/
 .audio-libro{
     @extend %margin;
+    ul{
+        list-style: none;
+        .audiolibros-card{
+            .card-fondo{
+                height: fit-content;
+                .audiolibros-img{
+                    min-height: 100%;
+                }
+            }
+            .card-body{
+                p{
+                   font-size: 70%;
+                }
+            }
+        }
+    }
     .audiolibros-card{
-        max-height: 80%;
-        .audiolibros-img{
-            height: 100%;
+        max-height: 100%;
+        .card-fondo{
+            background-color: nth($colores,7);
         }
     }
 }

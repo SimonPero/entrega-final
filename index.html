@@ -21,62 +21,51 @@
   <!-- menu-->
     <div class="contenedor ">
         <header >
-            
-                <div class="contenedor-header fondo-color" >
+            <nav class="navbar navbar-expand-lg fondo-color flew-wrap">
+                <div class=" container-fluid contenedor-header" >
                     <div class="container logo-granlector">
                         <a class="navbar-brand " href="index.html">
                           <img src="img/Gran-Lector.png" alt="Bootstrap">
                         </a>
                     </div>
-                    
-                    <nav class="header-pc">
-                        <ul>
-                            <li>
-                                <a href="pages/manwhas.html">Manwhas</a>
-                            </li>
-                            <li>
-                                <a aria-current="page" href="pages/audiolibros.html">AudioLibros</a>
-                            </li>
-                            <li>
-                                <a href="pages/dudas.html">Ayuda y Dudas</a>
-                            </li>
-                            <li>
-                                <a href="pages/regist.html">Registrarse</a>
-                            </li>
-                        </ul>
-                    </nav> 
-
                     <button class="navbar-toggler bg-secondary btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-body bg-dark">
+                        <div class="offcanvas-body">
                             <div class="cierre-canva">
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="pages/manwhas.html">Manwhas</a>
+                            <ul class="navbar-nav flex-grow-1 pe-3 flew-wrap">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="pages/manwhas.html">
+                                        <img src="img/icon-manwhas1.png"alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                                        Manwhas
+                                    </a>
                                 </li>
-                            <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="pages/audiolibros.html">AudioLibros</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="pages/dudas.html">Ayuda y Dudas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/regist.html">Registrarse</a>
-                            </li>
-                            
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="pages/audiolibros.html">
+                                        <img src="img/icon-audiolibros1.png"alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                                        Audiolibros
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/dudas.html" aria-current="page">
+                                        <img src="img/icon-ayuda1.png"alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                                        Ayuda y dudas
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/regist.html" aria-current="page">
+                                        <img src="img/icon-regist1.png"alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                                        Registrarse
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-       
+            </nav>
         </header>
         
         <!-- contenido -->

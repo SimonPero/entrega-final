@@ -21,14 +21,18 @@ header{
         }
         .offcanvas{
             .offcanvas-body{ 
+                background-color: #333;
                 .cierre-canva{
                     display: flex;
                     justify-content: right;
                     button{
                         background-color:nth($colores,2);
                     }
-                    
-                    
+                }
+                ul{
+                    li{
+                        color: nth($colores,6);
+                    }
                 }
             }
         }

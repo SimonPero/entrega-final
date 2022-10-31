@@ -23,7 +23,9 @@ body{
 
 /*links css*/
 
-
+a{
+    color: nth($colores,6 );
+}
 a:visited{
     color: nth($colores,2);
 }
