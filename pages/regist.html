@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <title>Registrarse</title>
 </head>
-<body>
+<body class="register">
     <div class="contenedor">
         <header >
             <nav class="navbar navbar-expand-lg fondo-color flew-wrap">
@@ -64,31 +64,31 @@
 
         <!--Contenido-->
         <main class="registrar">
-            <form action="">
+            <form>
                 <fieldset>
                     <legend>
                         Registrate
                     </legend>
                     <div>
-                        <label for="nombre"></label> 
-                        <input type="text" id="nombre" placeholder="Nombre de usuario">
+                        <label for="nombre">Nombre y apellido</label> 
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre usuario">
                     </div>
                     <div>
-                        <label for="correo"></label> 
-                        <input type="email" id="correo" placeholder="Gmail">
+                        <label for="correo">Gmail</label> 
+                        <input type="email" id="correo" placeholder="Escribe tu correo Gmail">
                     </div>
                     <div>
-                        <label for="correo"></label> 
-                        <input type="email" id="contraseña" placeholder="Contraseña">
+                        <label for="correo">Contraseña</label> 
+                        <input type="text" id="contraseña" placeholder="Escribe tu contraseña">
                     </div>
                     <div>
-                        <label for="correo"></label> 
-                        <input type="email" id="ConfirmarContraseña" placeholder="ConfirmarContraseña">
+                        <label for="correo">Confirmación</label> 
+                        <input type="text" id="ConfirmarContraseña" placeholder="Confirma tu contraseña">
                     </div>
 
-                    <div>
-                        <input type="submit">
-                        <input type="reset">
+                    <div class="botones-registrar">
+                        <input class="subir" type="submit">
+                        <input class="resetear" type="reset">
                     </div>
                 </fieldset>
             </form>
@@ -99,21 +99,38 @@
         <div class="anuncio-uno">
             <img src="../img/pepsi-anuncion.png" alt="">
         </div>
-  
         <div class="anuncio-dos">
             <img src="../img/anuncio-diseño.png" alt="">
+        </div>
+        <div class="anuncio-tres">
+            <img src="../img/anuncio-tres.png" alt="">
+        </div>
+        <div class="anuncio-cuatro">
+            <img src="../img/anuncio-cuatro.png" alt="">
         </div>
         <!--Pie de pagina-->
 
         <footer>
             <nav class="navbar fondo-color sticky-bottom">
-                <div class="container-fluid contenedor-footer placeholder-sm">
+                <div class="container-fluid contenedor-footer placeholder-sm ">
                     <h4 class="derechos">Todos los derechos reservados</h4>
-                    <div class="logos-sociales">
-                    <a Target=_blank href=""><img src="../img/logo-insta.png" alt=""></a>
-                    <a Target=_blank- href=""><img src="../img/logo-face.png" alt=""></a>
-                    <a Target=_blank href=""><img src="../img/discord.png" alt=""></a>
-                    </div>
+                    <ul class="navbar-nav flex-grow-1 pe-3 flew-wrap logos-sociales">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" Target=_blank href="">
+                                <img src="../img/logo-insta.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" Target=_blank href="">
+                                <img src="../img/logo-face.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" Target=_blank href="">
+                                <img src="../img/discord.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </footer>
